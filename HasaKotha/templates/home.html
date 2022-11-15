@@ -1,0 +1,90 @@
+{%load static%}
+{%static "" as baseUrl%}
+{%static "css" as css%}
+{%static "images" as images%}
+{%static "js" as js%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HasaKotha</title>
+    <link rel="shortcut icon" href="{{images}}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{css}}/customColor.css">
+    <link rel="stylesheet" href="{{css}}/fontawesome_all.css">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ECEEF0;
+            height: 100vh;
+        }
+
+
+        #gotoSignup {
+            text-decoration: none;
+        }
+
+        #feedcontainer {
+            background-color: #ffffff;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="{{images}}/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">&nbsp;HasaKotha</a>
+            <form action="{%url 'login_page'%}">
+                <button class="btn btn-primary">logout&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container w-100  mt-4 d-flex justify-content-center align-items-center  ">
+        <p class="text-primary"><i class="fa-regular fa-7x fa-comments"></i></p>
+    </div>
+
+    <div class="container  h-100 p-0">
+        <div class="card border-0 mb-3">
+            <div class="card-footer text-end pt-0 pb-0 bg-grey border-0 text-muted">Sunday, 12:01 am</div>
+            <div class="card-body text-center">
+                <p class="card-text">This is a random message where our users can leave a message for another user. {{request.session.nickName}}</p>
+            </div>
+        </div>
+
+        <div class="card border-0 mb-3">
+            <div class="card-footer text-end pt-0 pb-0 bg-grey border-0 text-muted">Sunday, 12:01 am</div>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste, nobis earum
+                    ad eos atque voluptatibus mollitia autem saepe soluta aut quod unde perspiciatis, tempore quae
+                    veritatis optio rerum dolor. A dolores distinctio ab rem quidem quas eligendi, consequatur
+                    reiciendis tenetur, aperiam numquam magni deleniti voluptate saepe laboriosam laudantium qui aliquid
+                    ducimus, minus architecto! Numquam rerum dolor, dignissimos perspiciatis ipsum culpa ea nesciunt
+                    sequi fugit sit labore? Ipsa aliquam expedita officia, id, cupiditate perferendis odit soluta
+                    ducimus dignissimos numquam impedit nobis saepe? Explicabo, nisi consequatur! Maiores hic voluptas
+                    neque, ipsum autem molestias, provident suscipit necessitatibus unde doloremque quod modi iste?</p>
+            </div>
+        </div>
+
+        <div class="card border-0 mb-3">
+            <div class="card-footer text-end pt-0 pb-0 bg-grey border-0 text-muted">Sunday, 12:01 am</div>
+            <div class="card-body text-center">
+                <p class="card-text">This is a random message where our users can leave a message for another user.</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{js}}/bootstrap.min.js"></script>
+</body>
+
+</html>

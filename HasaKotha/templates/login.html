@@ -1,0 +1,99 @@
+{%load static%}
+{%static "" as baseUrl%}
+{%static "css" as css%}
+{%static "images" as images%}
+{%static "js" as js%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HasaKotha</title>
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+  <link rel="shortcut icon" href="{{images}}/favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="{{css}}/customColor.css">
+  <link rel="stylesheet" href="{{css}}/fontawesome_all.css">
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      height: 100vh;
+      background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+   
+
+    #gotoSignup{
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  {% if messages%}
+    {% for message in messages%}
+      {% if message.tags == 'warning'%}
+          <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <div>
+              <i class="fa-solid fa-circle-xmark"></i>&nbsp;&nbsp;{{message}}
+            </div>
+          </div>
+      {%endif%}
+    {%endfor%}
+  {%endif%}
+
+  {% if request.session.signup_success%}
+  <div class="alert alert-success d-flex align-items-center" role="alert">
+    <div>
+      <i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Congratulations! You have successfully signed up 😋
+    </div>
+  </div>
+  {%endif%}
+
+
+  <div class="container h-75 pt-2 d-flex flex-column justify-content-center align-items-center">
+    <!-- logo start -->
+    <div class="d-flex justify-content-center">
+      <img src="{{images}}/hasaKothaBlue.png" alt="" width="150vw" class="logo">
+    </div>
+    <!-- logo end -->
+    <!-- this next div is a login form -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <form class="mt-5" action="{% url 'login_process'%}" method="post">
+        {%csrf_token%}
+        <div class="input-group mb-3">
+          <span class="input-group-text text-primary" id="inputGroup-sizing-default"><i class="fa-solid fa-user"></i></span>
+          <input name="nickName" type="text" class="form-control" placeholder="Nickname">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text text-primary" id="inputGroup-sizing-default"><i class="fa-solid fa-key"></i></span>
+          <input name="password" type="password" class="form-control" placeholder="Password">
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+      
+    </div>
+    <!-- form end -->
+    <small class="text-primary mt-3">😨 Havent Created an account yet? <b><a id="gotoSignup" href="{%url 'signup_page'%}">Get one</a></b></small>
+  </div>
+  
+
+
+
+  <script src="{{js}}/bootstrap.min.js"></script>
+</body>
+
+</html>
