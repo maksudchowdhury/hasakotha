@@ -6,9 +6,11 @@ but here are some previews how the final product would look like,
 
 <br>
 2. This is the Sign up screen <br>
-![s3](https://github.com/maksudchowdhury/hasakotha/assets/45464612/6f41efb6-ce61-407b-b6dc-e34f6d436e49)
+![s3](https://github.com/maksudchowdhury/hasakotha/assets/45464612/98ffdff1-ce15-4666-acf5-32cec6fcad59)
+
 
 <br>
 3. This is the user dashboard <br>
-![s2](https://github.com/maksudchowdhury/hasakotha/assets/45464612/986194cc-27c3-438b-9d1d-39ec3921d94c)
+![s2](https://github.com/maksudchowdhury/hasakotha/assets/45464612/b2512852-8f57-4ec4-a6a3-70aba79b2799)
+
 
