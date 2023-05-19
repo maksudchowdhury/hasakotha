@@ -9,9 +9,14 @@ but here are some previews how the final product would look like,
 
 ![s3](https://github.com/maksudchowdhury/hasakotha/assets/45464612/a314181b-3105-4687-9880-e832dd11a9d9)
 
+
+
 <br>
-3. This is the user dashboard <br>
+3. This is the message sharing window <br>
+![sharemsg](https://github.com/maksudchowdhury/hasakotha/assets/45464612/815ca3cc-6cfa-465d-af0c-4d0d9dea60f7)
+
+
+<br>
+4. This is the user dashboard <br>
 
 ![s2](https://github.com/maksudchowdhury/hasakotha/assets/45464612/4f5efd26-65b5-4aa6-8d13-bad770b87c77)
-
-
