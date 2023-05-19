@@ -9,3 +9,4 @@ but here are some previews how the final product would look like,
 ![s3](https://github.com/maksudchowdhury/hasakotha/assets/45464612/c8a5f6c3-e5bc-40f7-8c49-30642115f9a1)
 <br>
 3. This is the user dashboard <br>
+![s2](https://github.com/maksudchowdhury/hasakotha/assets/45464612/eee834fb-2aa1-43e7-b535-6c42ff9ac197)
