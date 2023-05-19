@@ -13,7 +13,8 @@ but here are some previews how the final product would look like,
 
 <br>
 3. This is the message sharing window <br>
-![sharemsg](https://github.com/maksudchowdhury/hasakotha/assets/45464612/815ca3cc-6cfa-465d-af0c-4d0d9dea60f7)
+
+![sharemsg](https://github.com/maksudchowdhury/hasakotha/assets/45464612/f28b0df9-9445-4ead-a766-424ae95d1f3c)
 
 
 <br>
